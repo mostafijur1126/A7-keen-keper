@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import React from 'react';
 import { FaHome } from 'react-icons/fa';
@@ -19,8 +20,8 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52"
                         >
                             <li><Link href="/"><FaHome /> Home</Link></li>
-                            <li><Link href="/"><MdOutlineWatchLater /> Timeline</Link></li>
-                            <li><Link href="/"><TfiStatsUp /> Stats</Link></li>
+                            <li><Link href="/timeline"><MdOutlineWatchLater /> Timeline</Link></li>
+                            <li><Link href="/stats"><TfiStatsUp /> Stats</Link></li>
                         </ul>
                     </div>
                     <Link href="/" className="font-bold text-xl md:text-2xl">
@@ -36,13 +37,13 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/" className='btn'>
+                            <Link href="/timeline" className='btn'>
                                 <MdOutlineWatchLater /> Timeline
                             </Link>
                         </li>
 
                         <li>
-                            <Link href="/" className='btn'>
+                            <Link href="/stats" className='btn'>
                                 <TfiStatsUp /> Stats
                             </Link>
                         </li>
