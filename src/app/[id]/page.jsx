@@ -72,7 +72,7 @@ const FriendDetailsPage = async ({ params }) => {
                             <p className='text-gray-400 text-base md:text-xl'>Connect every <span className='text-xl md:text-2xl font-bold text-black'>{expectedFriend.goal} days</span></p>
                         </div>
                         <div>
-                            <button className='btn w-full sm:w-auto'>Edit</button>
+                            <button className='btn w-full sm:w-auto bg-green-900 text-white'>Edit</button>
                         </div>
                     </div>
                     <div className='bg-white p-5 md:p-6 rounded shadow'>

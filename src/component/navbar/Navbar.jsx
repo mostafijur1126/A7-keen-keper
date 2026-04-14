@@ -9,8 +9,8 @@ import { TfiStatsUp } from 'react-icons/tfi';
 const Navbar = () => {
     const pathname = usePathname();
     return (
-        <div className='w-full bg-base-100 shadow-sm px-4'>
-            <div className="navbar max-w-7xl mx-auto">
+        <div className='w-full bg-base-100 px-4 shadow sticky top-0 z-50'>
+            <div className="navbar max-w-7xl mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
