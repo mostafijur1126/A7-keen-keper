@@ -15,14 +15,15 @@ const TimelinePage = () => {
                 <div className='space-y-3'>
                     {
                         friendInfo.map((item, ind) => (
-                            <div key={ind} className='bg-white p-5 flex items-center gap-5 rounded'>
+                            <div key={ind} className='bg-white p-5 flex items-center gap-5 rounded shadow'>
                                 <div>
                                     {item.type === "call" ? (<Image src="/call.png" alt='Call' width={40} height={40}></Image>) 
                                     : item.type === "text" ? (<Image src="/text.png" alt='Text' width={40} height={40}></Image>)
                                     : (<Image src="/video.png" alt='Video' width={40} height={40}></Image>)}
                                 </div>
                                 <div>
-                                    <p>{item.type} with {item.name}</p>
+                                    <p><span className='capitalize font-semibold text-xl'>{item.type}</span> with {item.name}</p>
+                                    <p>{item.Date}</p>
                                 </div>
                             </div>
                         ))

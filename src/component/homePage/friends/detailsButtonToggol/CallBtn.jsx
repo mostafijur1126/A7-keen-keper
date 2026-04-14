@@ -12,7 +12,7 @@ import { toast } from 'react-toastify';
 const CallBtn = ({ expectedFriend }) => {
     const { friendInfo, setFriendInfo } = useContext(HistoryContext)
     const handelCallInfo = (type) => {
-        const updateFriendInfo = { ...expectedFriend, type }
+        const updateFriendInfo = { ...expectedFriend, type, Date:new Date().toLocaleString() }
         setFriendInfo([...friendInfo, updateFriendInfo]);
         let actionType = "";
         if(type === "call"){
