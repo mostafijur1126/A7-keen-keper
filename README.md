@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KeenKeeper
 
-## Getting Started
+A simple and practical call management web app where you can stay connected with your friends, family, colleagues, and more. It helps you keep track of your communication history — whether it’s calls, texts, or video interactions — all in one place.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This website is designed to make communication tracking easy and organized. Instead of forgetting when you last contacted someone, you can quickly check your interaction history and take action when needed.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+* Next.js
+* Tailwind CSS
+* DaisyUI
+* React Toastify
+* React Icons
+* Recharts
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Friend Tracker
 
-## Deploy on Vercel
+Easily monitor your connections and see their latest contact status.
+You can quickly understand whether someone is:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* On track
+* Almost due
+* Overdue
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This helps you stay in touch with people who matter.
+
+---
+
+### 2. Quick Check-In
+
+Quickly connect with anyone using call, text, or video options.
+You can also see when you last interacted with them, so you always stay updated.
+
+---
+
+### 3. Friendship Analytics
+
+Get a clear overview of your communication habits using a pie chart.
+It shows your call, text, and video interaction history in a simple visual format.
+
+---
+
+## Goal of the Project
+
+The main goal of this project is to help users maintain better relationships by making communication tracking simple, visual, and accessible.
+
+---

@@ -5,6 +5,7 @@ import { IoIosNotifications } from 'react-icons/io';
 import { FiArchive, FiPhoneCall } from 'react-icons/fi';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import CallBtn from '@/component/homePage/friends/detailsButtonToggol/CallBtn';
+import { notFound } from 'next/navigation';
 
 const dataResponse = async () => {
     const res = await fetch('https://a7-keen-keeper.vercel.app/data.json', {
@@ -18,7 +19,9 @@ const FriendDetailsPage = async ({ params }) => {
     const { id } = await (params);
     const friends = await dataResponse();
     const expectedFriend = friends.find(friend => friend.id == id);
-
+    if(!expectedFriend){
+        notFound();
+    }
     return (
         <div className='bg-green-50 px-4'>
             <div className='max-w-7xl mx-auto py-10 md:py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-3 gap-6'>
