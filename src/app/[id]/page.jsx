@@ -65,7 +65,7 @@ const FriendDetailsPage = async ({ params }) => {
                             <p className='text-gray-400 text-sm md:text-base'>Goal (Days)</p>
                         </div>
                         <div className='bg-white p-5 md:p-6 text-center rounded shadow'>
-                            <p className='text-3xl md:text-4xl font-bold text-green-900'>{expectedFriend.next_due_date}</p>
+                            <p className='text-2xl md:text-3xl lg:text-4xl font-bold text-green-900'>{expectedFriend.next_due_date}</p>
                             <p className='text-gray-400 text-sm md:text-base'>Next Due</p>
                         </div>
                     </div>
